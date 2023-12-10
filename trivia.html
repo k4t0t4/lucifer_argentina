@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lucifer AR - Trivia</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../css/estilos.css">
+  <script src="../js/trivia.js"></script>
+</head>
+
+<body>
+  <div class="principal">
+    <header class="text-center">
+      <h1 style="font-family:'Aboreto-Regular', Sans-Serif;">Lucifer</h1>
+    </header>
+
+    <nav class="navbar navbar-expand-lg bg-light">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="../html/elenco.html">Elenco</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="../html/temporadas.html">Temporadas</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="../html/produccion.html">Producción</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="../html/galeria.html">Galería</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="../html/trivia.html">Trivia</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="../html/contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="../html/desarrolladora.html">Desarrolladora</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <section class="principal text-center">
+        <div class="offset-md-3 col-6">
+          <p>
+            El objetivo de este juego es responder correctamente la mayor cantidad de preguntas y llegar al mejor puntaje.
+            Por cada respuesta correcta sumás 10 puntos, si errás, no cambia nada. A lo largo del juego tenés 3 ayudas,
+            pero al utilizarlas, sumás solo 7 puntos por respuesta correcta. ¡Exitos!
+          </p>
+        </div>
+
+          <form action="#" name="preg1" onsubmit="enviarRespuestas(); return false">
+  
+            <!--Primer pregunta-->
+            <div class="pregunta1">
+              <p><strong>1. ¿En qué año se estrenó Lucifer?</strong></p> 
+              <div class="respuestas">
+
+                <input type="radio" id="P1R1" name="P1" value="Respuesta 1">
+                <label for="P1R1">2014</label><br>
+  
+                <input type="radio" id="P1R2" name="P1" value="Respuesta 2">
+                <label for="P1R2">2015</label><br>
+  
+                <input type="radio" id="P1R3" name="P1" value="Respuesta 3">
+                <label for="P1R3">2016</label><br>
+  
+                <input type="radio" id="P1R4" name="P1" value="Respuesta 4">
+                <label for="P1R4">2017</label><br>
+                <br>
+  
+                <div class="botonAyuda">
+                  <button type="button" id="ayuda1" onclick="ayuda(1);">Ayuda</button>
+                </div> 
+              </div>  
+              <br>  
+            </div>
+  
+            <!--Segunda pregunta-->
+            <div class="pregunta2">  
+              <p><strong>2. ¿En qué serie está basada Lucifer?</strong></p> 
+              <div class="respuestas">
+  
+                <input type="radio" id="P2R1" name="P2" value="Respuesta 1">
+                <label for="P2R1">Arrow</label><br>
+  
+                <input type="radio" id="P2R2" name="P2" value="Respuesta 2">
+                <label for="P2R2">The Sandman</label><br>
+  
+                <input type="radio" id="P2R3" name="P2" value="Respuesta 3">
+                <label for="P2R3">The Flash</label><br>
+  
+                <input type="radio" id="P2R4" name="P2" value="Respuesta 4">
+                <label for="P2R4">League of Legends</label><br>
+                <br>
+  
+                <div class="botonAyuda">
+                  <button type="button" id="ayuda2" onclick="ayuda(2);">Ayuda</button>
+                </div> 
+              </div>
+              <br>
+            </div>
+
+            <!--Tercer pregunta-->
+            <div class="pregunta3"> 
+              <p><strong>3. ¿Cuál es el papel que tiene Maze en la vida de Lucifer?</strong></p>  
+              <div class="respuestas">
+  
+                <input type="radio" id="P3R1" name="P3" value="Respuesta 1">
+                <label for="P3R1">Psicóloga</label><br>
+  
+                <input type="radio" id="P3R2" name="P3" value="Respuesta 2">
+                <label for="P3R2">Amante</label><br>
+  
+                <input type="radio" id="P3R3" name="P3" value="Respuesta 3">
+                <label for="P3R3">Conocida</label><br>
+  
+                <input type="radio" id="P3R4" name="P3" value="Respuesta 4">
+                <label for="P3R4">Fiel aliada</label><br>
+                <br>
+  
+                <div class="botonAyuda">
+                  <button type="button" id="ayuda3" onclick="ayuda(3);">Ayuda</button>
+                </div> 
+              </div>
+              <br> 
+            </div>
+    
+            <!--Cuarta pregunta-->
+            <div class="pregunta4">
+              <p><strong>4. ¿Cuál es el apellido de Chloe?</strong></p> 
+              <div class="respuestas">
+  
+                <input type="radio" id="P4R1" name="P4" value="Respuesta 1">
+                <label for="P4R1">Decker</label><br>
+  
+                <input type="radio" id="P4R2" name="P4" value="Respuesta 2">
+                <label for="P4R2">Harris</label><br>
+  
+                <input type="radio" id="P4R3" name="P4" value="Respuesta 3">
+                <label for="P4R3">Darson</label><br>
+  
+                <input type="radio" id="P4R4" name="P4" value="Respuesta 4">
+                <label for="P4R4">Espinoza</label><br>
+                <br>
+  
+                <div class="botonAyuda">
+                  <button type="button" id="ayuda4" onclick="ayuda(4);">Ayuda</button>
+                </div> 
+              </div>
+              <br> 
+            </div>  
+  
+            <!--Quinta pregunta-->
+            <div class="pregunta5">
+              <p><strong>5. ¿Cuántas temporadas tuvo la serie?</strong></p> 
+              <div class="respuestas">
+  
+                <input type="radio" id="P5R1" name="P5" value="Respuesta 1">
+                <label for="P5R1">2</label><br>
+  
+                <input type="radio" id="P5R2" name="P5" value="Respuesta 2">
+                <label for="P5R2">4</label><br>
+  
+                <input type="radio" id="P5R3" name="P5" value="Respuesta 3">
+                <label for="P5R3">6</label><br>
+  
+                <input type="radio" id="P5R4" name="P5" value="Respuesta 4">
+                <label for="P5R4">7</label><br>
+                <br>
+  
+                <div class="botonAyuda">
+                  <button type="button" id="ayuda5" onclick="ayuda(5);">Ayuda</button>
+                </div> 
+              </div>
+              <br>
+            </div>
+
+            <!--Sexta pregunta-->
+            <div class="pregunta6">  
+              <p><strong>6. ¿Para qué personaje audicionó Aimee García?</strong></p>  
+              <div class="respuestas">
+  
+                <input type="radio" id="P6R1" name="P6" value="Respuesta 1">
+                <label for="P6R1">Mazikeen</label><br>
+  
+                <input type="radio" id="P6R2" name="P6" value="Respuesta 2">
+                <label for="P6R2">Charlotte</label><br>
+  
+                <input type="radio" id="P6R3" name="P6" value="Respuesta 3">
+                <label for="P6R3">Rory</label><br>
+  
+                <input type="radio" id="P6R4" name="P6" value="Respuesta 4">
+                <label for="P6R4">Ella</label><br>
+                <br>
+                <div class="botonAyuda">
+                  <button type="button" id="ayuda6" onclick="ayuda(6);">Ayuda</button>
+                </div>  
+              </div>
+              <br>
+            </div>
+
+            <!--Septima pregunta-->
+            <div class="pregunta7"> 
+              <p><strong>7. ¿Cómo se tituló el último capítulo de la serie?</strong></p>  
+              <div class="respuestas">
+  
+                <input type="radio" id="P7R1" name="P7" value="Respuesta 1">
+                <label for="P7R1">Compañeros hasta el final</label><br>
+  
+                <input type="radio" id="P7R2" name="P7" value="Respuesta 2">
+                <label for="P7R2">El tiempo no espera</label><br>
+  
+                <input type="radio" id="P7R3" name="P7" value="Respuesta 3">
+                <label for="P7R3">El final</label><br>
+  
+                <input type="radio" id="P7R4" name="P7" value="Respuesta 4">
+                <label for="P7R4">La última canción</label><br>
+                <br>
+  
+                <div class="botonAyuda">
+                  <button type="button" id="ayuda7" onclick="ayuda(7);">Ayuda</button>
+                </div>
+              </div>
+              <br>
+            </div> 
+  
+            <!--Octava pregunta-->
+            <div class="pregunta8">  
+              <p><strong>8. ¿Dónde fue grabada la primera temporada sin contar el capítulo piloto?</strong></p>  
+              <div class="respuestas">
+  
+  
+                <input type="radio" id="P8R1" name="P8" value="Respuesta 1">
+                <label for="P8R1">Los Angeles</label><br>
+  
+                <input type="radio" id="P8R2" name="P8" value="Respuesta 2">
+                <label for="P8R2">British Columbia</label><br>
+  
+                <input type="radio" id="P8R3" name="P8" value="Respuesta 3">
+                <label for="P8R3">Melbourne</label><br>
+  
+                <input type="radio" id="P8R4" name="P8" value="Respuesta 4">
+                <label for="P8R4">Philadelphia</label><br>
+                <br> 
+                <div class="botonAyuda">
+                  <button type="button" id="ayuda8" onclick="ayuda(8);">Ayuda</button>
+                </div>
+                <br>
+              </div>
+            </div>
+  
+  
+            <!--Novena pregunta-->
+            <div class="pregunta9">  
+              <p><strong>9. ¿Cómo se llama el club nocturno de Lucifer?</strong></p>  
+              <div class="respuestas">
+  
+                <input type="radio" id="P9R1" name="P9" value="Respuesta 1">
+                <label for="P9R1">Aura</label><br>
+  
+                <input type="radio" id="P9R2" name="P9" value="Respuesta 2">
+                <label for="P9R2">Quimera</label><br>
+  
+                <input type="radio" id="P9R3" name="P9" value="Respuesta 3">
+                <label for="P9R3">Lux</label><br>
+  
+                <input type="radio" id="P9R4" name="P9" value="Respuesta 4">
+                <label for="P9R4">Edén</label><br>
+                <br>
+  
+                <div class="botonAyuda">
+                  <button type="button" id="ayuda9" onclick="ayuda(9);">Ayuda</button>
+                </div>  
+              </div>
+              <br>  
+            </div>
+  
+            <!--Decima pregunta-->
+            <div class="pregunta10">  
+              <p><strong>10. ¿Qué canal distribuyó las primeras tres temporadas?</strong></p>  
+              <div class="respuestas">
+                <input type="radio" id="P10R1" name="P10" value="Respuesta 1">
+                <label for="P10R1">Netflix</label><br>
+  
+                <input type="radio" id="P10R2" name="P10" value="Respuesta 2">
+                <label for="P10R2">HBO Max</label><br>
+  
+                <input type="radio" id="P10R3" name="P10" value="Respuesta 3">
+                <label for="P10R3">Amazon Prime</label><br>
+  
+                <input type="radio" id="P10R4" name="P10" value="Respuesta 4">
+                <label for="P10R4">Fox</label><br>
+  
+                <br>
+                <div class="botonAyuda">
+                  <button type="button" id="ayuda10" onclick="ayuda(10);">Ayuda</button>
+                </div>
+              </div>
+              <br>
+            </div>
+            
+            <!--Enviar formulario-->
+            <div id="envioformulario">
+                <input type="submit" id="envioForm" value="Confirmar">
+            </div>
+          </form>
+          <p id="resultado"></p>
+          <p id="frase"></p>
+    </article>
+    </section>
+
+    <footer>
+      <p class="mt-4">Por cualquier duda o consulta, diríjase <a href="contacto.html">aquí</a> para contactarse con la desarrolladora</p>
+    </footer>
+      </div>
+      </body>
+      
+      </html>
